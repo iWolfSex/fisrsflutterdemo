@@ -13,6 +13,24 @@ class SettingPage extends StatefulWidget {
 class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
-    return const Text("我是设置界面");
+    return Container(
+      padding: EdgeInsets.all(20),
+      child: Column(
+        // ignore: deprecated_member_use
+        children: <Widget>[
+          RaisedButton(
+              child: Text("跳转到登录页面"),
+              onPressed: () {
+                Navigator.pushNamed(context, '/login');
+              }),
+          SizedBox(height: 20),
+          RaisedButton(
+              child: Text("跳转到注册页面"),
+              onPressed: () {
+                Navigator.pushNamed(context, '/registerFirst');
+              }),
+        ],
+      ),
+    );
   }
 }

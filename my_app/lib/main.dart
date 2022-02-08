@@ -1,3 +1,10 @@
+/*
+ * @Author: liuchao
+ * @Date: 2021-10-27 21:52:10
+ * @LastEditors: liuchao
+ * @LastEditTime: 2022-02-08 10:18:21
+ * @Description: file content
+ */
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
@@ -14,6 +21,9 @@ class MyAapp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: todo
     // TODO: implement build
-    return MaterialApp(initialRoute: '/', onGenerateRoute: onGenerateRoute);
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/',
+        onGenerateRoute: onGenerateRoute);
   }
 }

@@ -1,3 +1,10 @@
+/*
+ * @Author: liuchao
+ * @Date: 2021-11-07 16:11:58
+ * @LastEditors: liuchao
+ * @LastEditTime: 2022-02-08 13:53:22
+ * @Description: file content
+ */
 // ignore: duplicate_ignore
 // ignore: file_names
 // ignore_for_file: file_names, unused_import
@@ -28,12 +35,26 @@ class _HomePgeState extends State<HomePge> {
               }),
           SizedBox(height: 20),
           RaisedButton(
-              child: Text("跳转到表单并且传值"),
+              child: Text("跳转到商品页面并且传值"),
               onPressed: () {
                 //自定义路由传值
-                Navigator.pushNamed(context, "/productInfo",
+                Navigator.pushNamed(context, "/Product",
                     arguments: {"pid": "123456"});
               }),
+          SizedBox(height: 20),
+          RaisedButton(
+              child: Text("跳转到appBar"),
+              onPressed: () {
+                //自定义路由传值
+                Navigator.pushNamed(context, '/appBardDemo');
+              }),
+          SizedBox(height: 20),
+          RaisedButton(
+              child: Text("跳转到TabBarControllerPage"),
+              onPressed: () {
+                //自定义路由传值
+                Navigator.pushNamed(context, '/tabbarController');
+              })
         ],
       ),
     );
